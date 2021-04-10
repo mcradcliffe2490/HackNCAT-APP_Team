@@ -24,8 +24,10 @@ function selectedValue(movement) {
     } else if (i = 11) {
         coords[1] += movement;
         clean();
-        calculateHero();
+
+        //calculateHero();
     } else {
+        //
     }
 }
 

@@ -43,6 +43,36 @@ body {
     border-radius: 25px;
     border: 0px;
     margin: 10px;
+    background-size: 100%;
+}
+#sd:hover {
+    background: url('im.jpeg');
+    background-size: 100%;
+    color: white;
+}
+
+#d:hover {
+    background: url('hulk.jpg');
+    background-size: 100%;
+    color: white;
+}
+
+#n:hover {
+    background: url('nf3.png');
+    background-size: 100%;
+    color: white;
+}
+
+#a:hover {
+    background: url('capt.png');
+    background-size: 100%;
+    color: white;
+}
+
+#sa:hover {
+    background: url('thor.jpg');
+    background-size: 100%;
+    color: white;
 }
 
 .container {

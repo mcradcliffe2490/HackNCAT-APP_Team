@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Test</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">    
+    </head>
+    <body onload="nextQuestion()">
+        <div id="line"></div>
+        <div id="questionbox">
+            <h2 id="question">hi</h2>
+        </div>
+        <div id="line"></div>
+        <div id="buttons">
+            <input type="button" id="sd" value="STRONGLY DISAGREE" onclick=selectedValue(-2)></input>
+            <input type="button" id="d" value="DISAGREE" onclick=selectedValue(-1)></input>
+            <input type="button" id="n" value="NEUTRAL" onclick=selectedValue(0)></input>
+            <input type="button" id="a" value="AGREE" onclick=selectedValue(1)></input>
+            <input type="button" id="sa" value="STRONGLY AGREE" onclick=selectedValue(2)></input>
+        </div>
+    </body>
+</html>

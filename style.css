@@ -1,0 +1,76 @@
+body {
+    background-color: #ed1d24;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#line {
+    width: 100%;
+    height: 3px;
+    border: 10px;
+}
+
+#questionbox {
+    background-color: white;
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#question {
+    color: #ed1d24;
+    font-family: 'Marvel', sans-serif;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%;
+    height: 20%;
+}
+
+#buttons input {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    color: #ed1d24;
+    border-radius: 25px;
+    border: 0px;
+    margin: 10px;
+    background-size: 100%;
+}
+#sd:hover {
+    background: url('im.jpeg');
+    background-size: 100%;
+    color: white;
+}
+
+#d:hover {
+    background: url('hulk.jpg');
+    background-size: 100%;
+    color: white;
+}
+
+#n:hover {
+    background: url('nf3.png');
+    background-size: 100%;
+    color: white;
+}
+
+#a:hover {
+    background: url('capt.png');
+    background-size: 100%;
+    color: white;
+}
+
+#sa:hover {
+    background: url('thor.jpg');
+    background-size: 100%;
+    color: white;
+}

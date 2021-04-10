@@ -1,23 +1,51 @@
-<html>
-    <head>
-        <title>Test</title>
-        <script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">    
-    </head>
-    <body onload="nextQuestion()">
-        <div id="line"></div>
-        <div id="questionbox">
-            <h2 id="question">hi</h2>
-        </div>
-        <div id="line"></div>
-        <div id="buttons">
-            <input type="button" id="sd" value="STRONGLY DISAGREE" onclick=selectedValue(-2)></input>
-            <input type="button" id="d" value="DISAGREE" onclick=selectedValue(-1)></input>
-            <input type="button" id="n" value="NEUTRAL" onclick=selectedValue(0)></input>
-            <input type="button" id="a" value="AGREE" onclick=selectedValue(1)></input>
-            <input type="button" id="sa" value="STRONGLY AGREE" onclick=selectedValue(2)></input>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body onload="nextQuestion()">
+<div id="line"></div>
+<div id="questionbox">
+    <h2 id="question">hi</h2>
+</div>
+<div id="line"></div>
+<div id="buttons">
+    <input type="button" id="sd" value="STRONGLY DISAGREE" onclick=selectedValue(-2)></input>
+    <input type="button" id="d" value="DISAGREE" onclick=selectedValue(-1)></input>
+    <input type="button" id="n" value="NEUTRAL" onclick=selectedValue(0)></input>
+    <input type="button" id="a" value="AGREE" onclick=selectedValue(1)></input>
+    <input type="button" id="sa" value="STRONGLY AGREE" onclick=selectedValue(2)></input>
+</div>
+
+<div>
+    <input type="button" id="submit" class="buttons" value="Submit" style="display: none">
+</div>
+<div id="heroDescription" class="text-block">
+    <span id="heroText" style="font-size: x-large"></span>
+</div>
+<div class="row">
+    <span id="column1" class="container">
+        <span id="description1" class="text-block" style="font-size: larger"></span>
+    </span>
+    <span id="column2" class="container">
+        <span id="description2" class="text-block" style="font-size: larger"></span>
+    </span>
+    <span id="column3" class="container">
+        <span id="description3" class="text-block" style="font-size: larger"></span>
+    </span>
+    <span id="column4" class="container">
+        <span id="description4" class="text-block" style="font-size: larger"></span>
+    </span>
+    <span id="column5" class="container">
+        <span id="description5" class="text-block" style="font-size: larger"></span>
+    </span>
+</div>
+<script src="script.js"></script>
+<script src="http://www.myersdaily.org/joseph/javascript/md5.js"></script>
+<script type = "module" src = "fetchHeroData.js"></script>
+</body>
 </html>

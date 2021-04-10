@@ -74,3 +74,17 @@ body {
     background-size: 100%;
     color: white;
 }
+
+.container {
+    text-align: justify;
+    width: 200px
+}
+
+/* Bottom right text */
+.text-block {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}

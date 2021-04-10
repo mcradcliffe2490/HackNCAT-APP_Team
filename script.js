@@ -24,6 +24,7 @@ function selectedValue(movement) {
     } else if (i = 11) {
         coords[1] += movement;
         clean();
+
         //calculateHero();
     } else {
         //
@@ -56,8 +57,12 @@ function clean() {
     var bottomline = document.getElementById("buttons");
     bottomline.parentNode.removeChild(bottomline);
 
-    var element = document.getElementById("question");
-    element.innerHTML = "Thanks for taking the quiz! The hero you got was " + calculateHero() + "!";
+    var box = document.getElementById("question");
+    box.parentNode.removeChild(box);
+
+    document.getElementById("submit").style.display = "block"
+    // let userHeroResult = calculateHero()
+    // userHero = userHeroResult
 }
 
 function calculateHero() {
@@ -75,7 +80,7 @@ function calculateHero() {
         } else if (coords[1] < 5) {
             return "Captain Marvel";
         } else {
-            return "Spiderman";
+            return "Spider-Man";
         }
     } else {
         if (coords[1] < -3) {

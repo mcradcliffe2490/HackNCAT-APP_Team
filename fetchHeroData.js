@@ -1,4 +1,5 @@
 import {API_PUBLIC_KEY, API_PRIVATE_KEY} from './configVault.js'
+import { userHero } from './script.js'
 
 
 // example: http://gateway.marvel.com/v1/public/comics?ts=1&apikey=1234&hash=ffd275c5130566a2916217b101f26150
@@ -7,14 +8,16 @@ import {API_PUBLIC_KEY, API_PRIVATE_KEY} from './configVault.js'
 // <script type = "module" src = "fetchHeroData.js"></script>
 // both of these lines need to be added to HTML file
 
-document.getElementById("button").addEventListener("click", fetchHeroData)
+document.getElementById("submit").addEventListener("click", fetchHeroData)
 
 async function fetchHeroData(event) {
+    //hide the button pressed
+    event.target.style.display = "none"
     //sets up first api request
     let ts = event.timestamp;
     let hash = md5(ts + API_PRIVATE_KEY + API_PUBLIC_KEY)
     let siteRequest = "https://gateway.marvel.com/v1/public/characters?name="
-    let heroName = "Spider-Man" //Hardcoded right now, but will be the result of fetching a random hero name
+    let heroName = userHero //Hardcoded right now, but will be the result of fetching a random hero name
     let heroRequest = siteRequest + heroName + "&ts=" + ts + "&apikey=" + API_PUBLIC_KEY + "&hash=" + hash
     let comicsList = []
     let heroId = ""
@@ -24,7 +27,6 @@ async function fetchHeroData(event) {
             let heroData = result.data.results[0]
             heroId = heroData.id
 
-            console.log(heroData.description)
             document.getElementById("heroText").textContent = heroName + ": " + heroData.description
             //goes through hero's individual comics
             heroData.comics.items.forEach((item) => {

@@ -1,6 +1,5 @@
 i = -1;
 coords = [0, 0];
-export var userHero = "Spider-Man"
 
 let gelc = ['I have a dark sense of humor', 
     'Sometimes you have to crack a few eggs to make an omelette', 
@@ -27,7 +26,6 @@ function selectedValue(movement) {
         clean();
         calculateHero();
     } else {
-        //
     }
 }
 
@@ -60,13 +58,9 @@ function clean() {
     var box = document.getElementById("question");
     box.parentNode.removeChild(box);
 
-    // var img = document.createElement("img");
-    // img.src = "628.png";
-    // var bodyy = document.getElementById("questionbox");
-    // bodyy.appendChild(img);
     document.getElementById("submit").style.display = "block"
-    let userHeroResult = calculateHero()
-    userHero = userHeroResult
+    // let userHeroResult = calculateHero()
+    // userHero = userHeroResult
 }
 
 function calculateHero() {
